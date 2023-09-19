@@ -106,7 +106,6 @@ h2 {
 }
 
 /* boolist */
-
 .bookcont {
   display: flex;
   padding: 30px;
@@ -126,6 +125,7 @@ h2 {
 
 .book-title {
   padding-top: 4px;
+  font-size: 20px;
 }
 
 .book-author {

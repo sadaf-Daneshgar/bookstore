@@ -1,6 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import AddBook from './components/Addbook';
+import BookDiv from './components/BookForm';
+import BookList from './components/BookList';
 import Category from './components/category';
 
 function App() {
@@ -8,9 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<AddBook />} />
+        <Route path="/" element={<BookList />} />
         <Route path="/category" element={<Category />} />
       </Routes>
+      <BookDiv />
     </div>
   );
 }
