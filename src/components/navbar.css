@@ -58,13 +58,25 @@ h2 {
   margin: 0 190px;
 }
 
-.input {
-  width: 650px;
+.input-book {
+  width: 600px;
   padding: 16px;
-  margin: 30px 25px 20px 190px;
+  margin: 30px 25px 20px 140px;
   font-size: 14px;
   color: #90979e;
-  height: 45px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgb(224, 221, 221);
+  outline: none;
+}
+
+.input-author {
+  width: 240px;
+  padding: 16px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #90979e;
+  height: 50px;
   border-radius: 4px;
   border: 1px solid rgb(224, 221, 221);
   outline: none;
@@ -72,9 +84,9 @@ h2 {
 
 .select-cata {
   font-size: 14px;
-  height: 45px;
-  width: 260px;
-  margin-right: 25px;
+  height: 50px;
+  width: 200px;
+  margin-right: 20px;
   color: #90979e;
   border-radius: 4px;
   border: 1px solid rgb(224, 221, 221);
@@ -83,8 +95,8 @@ h2 {
 
 .addbtn {
   font-size: 14px;
-  height: 45px;
-  width: 180px;
+  height: 50px;
+  width: 160px;
   color: white;
   border-radius: 4px;
   border: 1px solid rgb(224, 221, 221);
