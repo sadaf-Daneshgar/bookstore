@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Book Store\] ](#-Book-Store-)
+- [📖 Book Store ](#-book-store-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [ Bookstore ] <a name="about-project"></a>
+# 📖 [ Book Store ] <a name="about-project"></a>
 
-**[ Bookstore ]** Is my second react project.
+**[ Book Store ]** Is my second react project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
