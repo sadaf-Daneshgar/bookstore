@@ -32,6 +32,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 1. ✅ **React**
+2. ✅ **Redux**
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -65,7 +66,7 @@
 
 - 🔰 **[React-based project]**
 - 🔰 **[Well Code structure]**
-- 🔰 **[Responsive]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
