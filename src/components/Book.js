@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Book({
-  category, title, author, onDelete, isCompleted, toggleStatus,
+  category,
+  title,
+  author,
+  onDelete,
+  isCompleted,
+  toggleStatus,
 }) {
   return (
     <div className={`book-list ${isCompleted ? 'completed' : ''}`}>
@@ -11,15 +16,18 @@ function Book({
           <div className="book-cata">{category}</div>
           <p className="book-title">{title}</p>
           <p className="book-author">{author}</p>
-          <button type="button" className="btn" id="commit">
+          <span className="btn" id="commit">
             Comments
-          </button>
+          </span>
           <button type="button" className="btn" id="delete" onClick={onDelete}>
             Remove
           </button>
-          <button type="button" className="btn" id="edit">
+          <span className="btn" id="edit">
             Edit
-          </button>
+          </span>
+        </div>
+        <div>
+          <div className="circle" />
         </div>
         <div className="compelet">
           <span className="precent">{isCompleted ? '100%' : '0%'}</span>
