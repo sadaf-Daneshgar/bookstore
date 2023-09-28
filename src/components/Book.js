@@ -16,15 +16,24 @@ function Book({
           <div className="book-cata">{category}</div>
           <p className="book-title">{title}</p>
           <p className="book-author">{author}</p>
-          <span className="btn" id="commit">
-            Comments
-          </span>
-          <button type="button" className="btn" id="delete" onClick={onDelete}>
-            Remove
-          </button>
-          <span className="btn" id="edit">
-            Edit
-          </span>
+          <div className="buttons">
+            <span className="btn" id="commit">
+              Comments
+            </span>
+            <div className="Line-2" />
+            <button
+              type="button"
+              className="btn"
+              id="delete"
+              onClick={onDelete}
+            >
+              Remove
+            </button>
+            <div className="Line-2" />
+            <span className="btn" id="edit">
+              Edit
+            </span>
+          </div>
         </div>
         <div>
           <div className="circle" />
@@ -33,6 +42,7 @@ function Book({
           <span className="precent">{isCompleted ? '100%' : '0%'}</span>
           <h5>{isCompleted ? 'completed' : 'not completed'}</h5>
         </div>
+        <div className="Line-1" />
         <div className="current-part">
           <p className="current-chapter">CURRENT CHAPTER</p>
           <h4>Chapter</h4>
