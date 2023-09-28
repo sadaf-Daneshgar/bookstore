@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
-import { removeBooks } from '../redux/books/bookSlice';
+import { removeBooks, fetchBooks } from '../redux/books/bookSlice';
 
 function BookList() {
   const [bookStatus, setBookStatus] = useState({});
 
-  const booksList = useSelector((state) => state.ArrayBooks);
+  const { booksList, isLoading, error } = useSelector(
+    (state) => state.booksList,
+  );
 
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
 
   const toggleBookStatus = (id) => {
     setBookStatus((prevStatus) => ({
@@ -16,6 +21,14 @@ function BookList() {
       [id]: !prevStatus[id],
     }));
   };
+
+  if (isLoading) {
+    return <div className="loading">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="loading">Somthing wrong during fetching books</div>;
+  }
 
   return (
     <>
