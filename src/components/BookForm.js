@@ -32,6 +32,7 @@ function BookDiv() {
   return (
     <>
       <div className="contanier">
+        <div className="line" />
         <span className="genral-title">ADD NEW BOOK</span>
         <div>
           <input
