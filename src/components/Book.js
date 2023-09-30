@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Book({
-  category, bookTitle, bookAuthor, isCompleted, toggleStatus,
+  category, title, author, onDelete, isCompleted, toggleStatus,
 }) {
   return (
     <div className={`book-list ${isCompleted ? 'completed' : ''}`}>
-      <div className="bookcont" key={bookTitle.id}>
+      <div className="bookcont">
         <div className="books-info">
           <div className="book-cata">{category}</div>
-          <p className="book-title">{bookTitle}</p>
-          <p className="book-author">{bookAuthor}</p>
+          <p className="book-title">{title}</p>
+          <p className="book-author">{author}</p>
           <button type="button" className="btn" id="commit">
             Comments
           </button>
-          <button type="button" className="btn" id="delete">
+          <button type="button" className="btn" id="delete" onClick={onDelete}>
             Remove
           </button>
           <button type="button" className="btn" id="edit">
@@ -39,8 +39,9 @@ function Book({
 
 Book.propTypes = {
   category: PropTypes.string.isRequired,
-  bookTitle: PropTypes.string.isRequired,
-  bookAuthor: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
   isCompleted: PropTypes.bool.isRequired,
   toggleStatus: PropTypes.func.isRequired,
 };

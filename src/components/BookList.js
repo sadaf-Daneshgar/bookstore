@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
+import { removeBooks } from '../redux/books/bookSlice';
 
 function BookList() {
   const [bookStatus, setBookStatus] = useState({});
 
-  const listBooks = [
-    {
-      id: 1, category: 'general', bookTitle: 'Small Book 1', bookAuthor: 'Sadaf',
-    },
-    {
-      id: 2, category: 'general', bookTitle: 'Small Book 2', bookAuthor: 'Sadaf',
-    },
-  ];
+  const booksList = useSelector((state) => state.ArrayBooks);
+
+  const dispatch = useDispatch();
 
   const toggleBookStatus = (id) => {
     setBookStatus((prevStatus) => ({
@@ -22,14 +19,15 @@ function BookList() {
 
   return (
     <>
-      {listBooks.map((book) => (
+      {booksList.map((booksDetails) => (
         <Book
-          key={book.id}
-          category={book.category}
-          bookTitle={book.bookTitle}
-          bookAuthor={book.bookAuthor}
-          isCompleted={bookStatus[book.id] || false}
-          toggleStatus={() => toggleBookStatus(book.id)}
+          key={booksDetails.item_id}
+          category={booksDetails.category}
+          title={booksDetails.title}
+          author={booksDetails.author}
+          onDelete={() => dispatch(removeBooks(booksDetails.item_id))}
+          isCompleted={bookStatus[booksDetails.item_id] || false}
+          toggleStatus={() => toggleBookStatus(booksDetails.item_id)}
         />
       ))}
     </>

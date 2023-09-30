@@ -5,11 +5,10 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Math Magicians\] ](#-math-magicians-)
+- [📖 Book Store ](#--book-store--)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -26,13 +25,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [ Bookstore ] <a name="about-project"></a>
+# 📖 [ Book Store ] <a name="about-project"></a>
 
-**[ Bookstore ]** Is my second react project.
+**[ Book Store ]** Is my second react project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 1. ✅ **React**
+2. ✅ **Redux**
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -66,14 +66,11 @@
 
 - 🔰 **[React-based project]**
 - 🔰 **[Well Code structure]**
-- 🔰 **[Responsive]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- ✅ coming soon ..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
