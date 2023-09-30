@@ -6,7 +6,7 @@ function Book({
 }) {
   return (
     <div className={`book-list ${isCompleted ? 'completed' : ''}`}>
-      <div className="bookcont" key={bookTitle}>
+      <div className="bookcont" key={bookTitle.id}>
         <div className="books-info">
           <div className="book-cata">{category}</div>
           <p className="book-title">{bookTitle}</p>
